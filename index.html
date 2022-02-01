@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Color (mobile) -->
+    <meta name="theme-color" content="#3b5998">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>GuidoNet</title>
+</head>
+<body class="bg-light">
+    
+    <!-- nav -->
+    <div class="d-flex justify-content-center align-items-center w-100 fixed-top" style="background: #3b5998 !important; height: 50px;">
+
+        <div class="container">
+            <!----------------- NAVBAR ----------------->
+            <div class="row align-items-center">
+                <!-- logo -->
+                <div class="col-4 p-2 d-flex justify-content-start align-items-center">
+                    <h3 class="fw-bold text-white m-0">guidonet</h3>
+                </div>
+    
+                <!-- search -->
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <!-- mobile -->
+                    <div style="width: 35px; height: 35px; background: #ffffff1e;" class="d-flex d-md-none rounded-circle d-flex justify-content-center align-items-center" type="button">
+                        <i class="fas fa-search text-white"></i>
+                    </div>
+
+                    <!-- desktop -->
+                    <div class="d-none d-md-flex justify-content-center align-items-center position-relative" style="width: 100%; max-width: 400px;">
+                        <input type="text" class="ipt w-100 p-1" placeholder="Search Anything">
+                        <i class="fas fa-search position-absolute end-0 me-2 text-white" type="button"></i>
+                    </div>
+                </div>
+    
+                <!-- menu -->
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <div class="d-lg-none d-flex justify-content-end align-items-center">
+                        <button class="button">
+                            <i class="fas fa-bars text-white fs-3"></i>
+                        </button>
+                    </div>
+
+                    <div class="d-lg-flex d-none justify-content-end align-items-center">
+                        <ul class="nav">
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link text-white p-0">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link text-white p-0">Amigos</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link text-white p-0">Grupos</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link text-white p-0">Cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!----------------- CONTAINER ----------------->
+    <div class="d-flex justify-content-center align-items-start" style="margin-top: 60px;">
+
+        <div class="container">
+            <div class="row align-items-start gx-3">
+                <!-- SIDEBAR 1 -->
+                <div class="col-12 col-md-2 col-lg-3">
+                    <ul class="nav d-flex flex-column d-none d-lg-flex position-fixed" style="max-width: 275px !important;">
+                        <!--  -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link anchor text-decoration-none text-muted">GuidoNet</a>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link anchor text-decoration-none text-muted">Servicios</a>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link anchor text-decoration-none text-muted">Cookies</a>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link anchor text-decoration-none text-muted">Careers</a>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link anchor text-decoration-none text-muted">Necesitas Ayuda? (FAQ)</a>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link anchor text-decoration-none text-muted">Contacto</a>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link anchor text-decoration-none text-muted">Términos y Condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- MAIN CONTENT -->
+                <div class="col-12 col-md-8 col-lg-6 p-0">
+
+                    <!-- contenedor general -->
+                    <div class="w-100 d-flex justify-content-center align-items-start flex-column" style="max-width: 600px !important;">
+
+                        <!-- create post -->
+                        <div class="bg-white w-100 rounded shadow-sm p-2 d-flex justify-content-center align-items-center flex-column mb-4">
+
+                            <!-- avatar -->
+                            <div class="w-100 d-flex justify-content-center">
+                                <div class="me-2 h-100 justify-content-center align-items-start">
+                                    <img class="rounded-circle" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="profile photo" style="width: 40px; height: 40px;" type="button">
+                                </div>
+
+                                <div class="w-100">
+                                    <textarea class="w-100 p-2 border rounded bg-light" style="height: 100px;" placeholder="Que estás pensando, Guido?"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- options & publish -->
+                            <div class="w-100 d-flex justify-content-between align-items-center flex-wrap mt-3">
+
+                                <!-- options -->
+                                <div class="options d-flex justify-content-start align-items-center">
+
+                                    <i class="fas fa-image mx-2 text-muted" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Foto"></i>
+
+                                    <i class="fas fa-camera mx-2 text-muted" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Video"></i>
+
+                                    <i class="fas fa-music mx-2 text-muted" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Musica"></i>
+
+                                    <i class="far fa-laugh-squint mx-2 text-muted" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sentimiento"></i>
+
+                                </div>
+
+                                <!-- publish btn -->
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <button class="btn btn-primary">Publicar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                        <!-- post 1 -->
+                        <div class="bg-white w-100 rounded shadow-sm p-3 d-flex justify-content-center align-items-center flex-column mb-4">
+
+                            <!-- user info & options -->
+                            <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img class="rounded-circle me-2" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="profile photo" style="width: 40px; height: 40px;" type="button">
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <span class="fw-bold fs-7">Guido Pastorino &#8226; 4h</span>
+                                        <span class="text-muted fs-7">@guido</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- content -->
+                            <div class="w-100">
+                                <p class="m-0">Hello literally everyone</p>
+                            </div>
+                            <div class="w-100">
+                                <hr class="m-0 my-3">
+                            </div>
+                            <!-- like & comment -->
+                            <div class="w-100 d-flex justify-content-between align-items-center flex-wrap">
+
+                                <div>
+                                    <i class="far fa-thumbs-up me-1" type="button"></i>
+                                    <span>32</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-comment me-1" type="button"></i>
+                                    <span>10</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-retweet me-1" type="button"></i>
+                                    <span>3</span>
+                                </div>
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <!--  -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="far fa-bookmark me-1"></i>
+                                            Añadir a Favoritos
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-share-alt me-1"></i>
+                                            Compartir
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-exclamation-triangle me-1"></i>
+                                            Reportar
+                                        </a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!-- end post -->
+                        </div>
+
+                        <!-- post 2 -->
+                        <div class="bg-white w-100 rounded shadow-sm p-3 d-flex justify-content-center align-items-center flex-column mb-4">
+
+                            <!-- user info & options -->
+                            <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img class="rounded-circle me-2" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="profile photo" style="width: 40px; height: 40px;" type="button">
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <span class="fw-bold fs-7">Lorem Ipsum &#8226; 11 de enero de 2022 a las 00:00hs</span>
+                                        <span class="text-muted fs-7">@lorem1</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- content -->
+                            <div class="w-100">
+                                <p class="m-0">Photos from today haha!!</p>
+                            </div>
+                            <div class="w-100 mt-2">
+                                <img class="img-fluid rounded" src="https://source.unsplash.com/random" alt="">
+                            </div>
+                            <div class="w-100">
+                                <hr class="m-0 my-3">
+                            </div>
+                            <!-- like & comment -->
+                            <div class="w-100 d-flex justify-content-between align-items-center flex-wrap">
+
+                                <div>
+                                    <i class="far fa-thumbs-up me-1" type="button"></i>
+                                    <span>32</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-comment me-1" type="button"></i>
+                                    <span>10</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-retweet me-1" type="button"></i>
+                                    <span>3</span>
+                                </div>
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <!--  -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="far fa-bookmark me-1"></i>
+                                            Añadir a Favoritos
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-share-alt me-1"></i>
+                                            Compartir
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-exclamation-triangle me-1"></i>
+                                            Reportar
+                                        </a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!-- end post -->
+                        </div>
+
+                        <!-- post 3 -->
+                        <div class="bg-white w-100 rounded shadow-sm p-3 d-flex justify-content-center align-items-center flex-column mb-4">
+
+                            <!-- user info & options -->
+                            <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img class="rounded-circle me-2" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="profile photo" style="width: 40px; height: 40px;" type="button">
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <span class="fw-bold fs-7">Lorem Ipsum &#8226; 11 de enero de 2022 a las 00:00hs</span>
+                                        <span class="text-muted fs-7">@lorem2</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- content -->
+                            <div class="w-100">
+                                <p class="m-0">New profile photo :D</p>
+                            </div>
+                            <div class="w-100 mt-2">
+                                <img class="img-fluid rounded" src="https://source.unsplash.com/random/2" alt="">
+                            </div>
+                            <div class="w-100">
+                                <hr class="m-0 my-3">
+                            </div>
+                            <!-- like & comment -->
+                            <div class="w-100 d-flex justify-content-between align-items-center flex-wrap">
+
+                                <div>
+                                    <i class="far fa-thumbs-up me-1" type="button"></i>
+                                    <span>32</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-comment me-1" type="button"></i>
+                                    <span>10</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-retweet me-1" type="button"></i>
+                                    <span>3</span>
+                                </div>
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <!--  -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="far fa-bookmark me-1"></i>
+                                            Añadir a Favoritos
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-share-alt me-1"></i>
+                                            Compartir
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-exclamation-triangle me-1"></i>
+                                            Reportar
+                                        </a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!-- end post -->
+                        </div>
+
+                        <!-- post 4 -->
+                        <div class="bg-white w-100 rounded shadow-sm p-3 d-flex justify-content-center align-items-center flex-column mb-4">
+
+                            <!-- user info & options -->
+                            <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img class="rounded-circle me-2" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="profile photo" style="width: 40px; height: 40px;" type="button">
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <span class="fw-bold fs-7">Lorem Ipsum &#8226; 7h</span>
+                                        <span class="text-muted fs-7">@lorem2</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- content -->
+                            <div class="w-100">
+                                <p class="m-0">Web 3.0 and NFT will be the best thing in the world lmao</p>
+                            </div>
+                            <div class="w-100">
+                                <hr class="m-0 my-3">
+                            </div>
+                            <!-- like & comment -->
+                            <div class="w-100 d-flex justify-content-between align-items-center flex-wrap">
+
+                                <div>
+                                    <i class="far fa-thumbs-up me-1" type="button"></i>
+                                    <span>32</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-comment me-1" type="button"></i>
+                                    <span>10</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-retweet me-1" type="button"></i>
+                                    <span>3</span>
+                                </div>
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <!--  -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="far fa-bookmark me-1"></i>
+                                            Añadir a Favoritos
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-share-alt me-1"></i>
+                                            Compartir
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-exclamation-triangle me-1"></i>
+                                            Reportar
+                                        </a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!-- end post -->
+                        </div>
+
+                        <!-- advestment -->
+                        <div class="alert alert-dismissible fade show bg-white d-flex flex-column justify-content-center align-items-center m-0 mt-3 mb-5 shadow-sm" role="alert">
+                            <!-- button close -->
+                            <div class="w-100">
+                                <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                            <!--  -->
+                            <div class="w-100">
+                                <strong>Hola, @user!</strong> Deseas vincular tu número de teléfono para mejores recomendaciones de publicidad?
+                            </div>
+                            <div class="w-100 my-2">
+                                <input type="tel" class=" w-100 input-group p-1" placeholder="Número de Teléfono">
+                            </div>
+                            <div class="w-100 d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <button class="btn btn-secondary" data-bs-dismiss="alert">
+                                        Enviar
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-question-circle text-secondary" type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Hacemos encuestas para mejorar la experiencia de los usuarios en esta red social. Proporcionar tus datos no es obligación y nunca lo será."></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- post 5 -->
+                        <div class="bg-white w-100 rounded shadow-sm p-3 d-flex justify-content-center align-items-center flex-column mb-4">
+
+                            <!-- user info & options -->
+                            <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img class="rounded-circle me-2" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="profile photo" style="width: 40px; height: 40px;" type="button">
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <span class="fw-bold fs-7">Lorem Ipsum &#8226; 7h</span>
+                                        <span class="text-muted fs-7">@lorem2</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- content -->
+                            <div class="w-100">
+                                <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe quidem labore velit voluptatem, quaerat eos aut ipsam id architecto molestias excepturi iste obcaecati accusamus eveniet, aspernatur sunt? Officiis, adipisci?</p>
+                            </div>
+                            <div class="w-100">
+                                <hr class="m-0 my-3">
+                            </div>
+                            <!-- like & comment -->
+                            <div class="w-100 d-flex justify-content-between align-items-center flex-wrap">
+
+                                <div>
+                                    <i class="far fa-thumbs-up me-1" type="button"></i>
+                                    <span>32</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-comment me-1" type="button"></i>
+                                    <span>10</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-retweet me-1" type="button"></i>
+                                    <span>3</span>
+                                </div>
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <!--  -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="far fa-bookmark me-1"></i>
+                                            Añadir a Favoritos
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-share-alt me-1"></i>
+                                            Compartir
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-exclamation-triangle me-1"></i>
+                                            Reportar
+                                        </a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!-- end post -->
+                        </div>
+
+                        <!-- post 6 -->
+                        <div class="bg-white w-100 rounded shadow-sm p-3 d-flex justify-content-center align-items-center flex-column mb-4">
+
+                            <!-- user info & options -->
+                            <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img class="rounded-circle me-2" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="profile photo" style="width: 40px; height: 40px;" type="button">
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <span class="fw-bold fs-7">Lorem Ipsum &#8226; 7h</span>
+                                        <span class="text-muted fs-7">@lorem2</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- content -->
+                            <div class="w-100">
+                                <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe quidem labore velit voluptatem, quaerat eos aut ipsam id architecto molestias excepturi iste obcaecati accusamus eveniet, aspernatur sunt? Officiis, adipisci?</p>
+                            </div>
+                            <div class="w-100">
+                                <hr class="m-0 my-3">
+                            </div>
+                            <!-- like & comment -->
+                            <div class="w-100 d-flex justify-content-between align-items-center flex-wrap">
+
+                                <div>
+                                    <i class="far fa-thumbs-up me-1" type="button"></i>
+                                    <span>32</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-comment me-1" type="button"></i>
+                                    <span>10</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-retweet me-1" type="button"></i>
+                                    <span>3</span>
+                                </div>
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <!--  -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="far fa-bookmark me-1"></i>
+                                            Añadir a Favoritos
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-share-alt me-1"></i>
+                                            Compartir
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-exclamation-triangle me-1"></i>
+                                            Reportar
+                                        </a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!-- end post -->
+                        </div>
+
+                        <!-- post 7 -->
+                        <div class="bg-white w-100 rounded shadow-sm p-3 d-flex justify-content-center align-items-center flex-column mb-4">
+
+                            <!-- user info & options -->
+                            <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img class="rounded-circle me-2" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="profile photo" style="width: 40px; height: 40px;" type="button">
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <span class="fw-bold fs-7">Lorem Ipsum &#8226; 7h</span>
+                                        <span class="text-muted fs-7">@lorem2</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- content -->
+                            <div class="w-100">
+                                <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe quidem labore velit voluptatem, quaerat eos aut ipsam id architecto molestias excepturi iste obcaecati accusamus eveniet, aspernatur sunt? Officiis, adipisci?</p>
+                            </div>
+                            <div class="w-100">
+                                <hr class="m-0 my-3">
+                            </div>
+                            <!-- like & comment -->
+                            <div class="w-100 d-flex justify-content-between align-items-center flex-wrap">
+
+                                <div>
+                                    <i class="far fa-thumbs-up me-1" type="button"></i>
+                                    <span>32</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-comment me-1" type="button"></i>
+                                    <span>10</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-retweet me-1" type="button"></i>
+                                    <span>3</span>
+                                </div>
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <!--  -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="far fa-bookmark me-1"></i>
+                                            Añadir a Favoritos
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-share-alt me-1"></i>
+                                            Compartir
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-exclamation-triangle me-1"></i>
+                                            Reportar
+                                        </a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!-- end post -->
+                        </div>
+
+                        <!-- post 8 -->
+                        <div class="bg-white w-100 rounded shadow-sm p-3 d-flex justify-content-center align-items-center flex-column mb-4">
+
+                            <!-- user info & options -->
+                            <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img class="rounded-circle me-2" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="profile photo" style="width: 40px; height: 40px;" type="button">
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <span class="fw-bold fs-7">Lorem Ipsum &#8226; 7h</span>
+                                        <span class="text-muted fs-7">@lorem2</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- content -->
+                            <div class="w-100">
+                                <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe quidem labore velit voluptatem, quaerat eos aut ipsam id architecto molestias excepturi iste obcaecati accusamus eveniet, aspernatur sunt? Officiis, adipisci?</p>
+                            </div>
+                            <div class="w-100">
+                                <hr class="m-0 my-3">
+                            </div>
+                            <!-- like & comment -->
+                            <div class="w-100 d-flex justify-content-between align-items-center flex-wrap">
+
+                                <div>
+                                    <i class="far fa-thumbs-up me-1" type="button"></i>
+                                    <span>32</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-comment me-1" type="button"></i>
+                                    <span>10</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-retweet me-1" type="button"></i>
+                                    <span>3</span>
+                                </div>
+                                <div class="dropdown">
+                                    <i class="fas fa-ellipsis-h" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <!--  -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="far fa-bookmark me-1"></i>
+                                            Añadir a Favoritos
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-share-alt me-1"></i>
+                                            Compartir
+                                        </a></li>
+                                        <!--  -->
+                                        <li><a class="dropdown-item anchor" href="#">
+                                            <i class="fas fa-exclamation-triangle me-1"></i>
+                                            Reportar
+                                        </a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!-- end post -->
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- end container -->
+                    </div>
+                </div>
+
+                <!-- SIDEBAR 2 -->
+                <div class="col-12 col-md-2 col-lg-3">
+
+                    <div class="d-none d-lg-flex flex-column justify-content-center align-items-center position-fixed" style="width: 275px !important;">
+
+                        <div class="d-flex justify-content-end align-items-center">
+                            <h5 class="text-muted m-0 me-2">Publicidad</h5>
+                            <i class="fas fa-exclamation-circle text-muted" type="button"></i>
+                        </div>
+
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/54c718088d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+</html>

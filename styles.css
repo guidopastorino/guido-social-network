@@ -1,0 +1,42 @@
+a:hover{
+    text-decoration: underline !important;
+}
+
+.ipt{
+    border: none !important;
+    border-bottom: 1px solid #fff !important;
+    outline: none !important;
+    background: transparent !important;
+    color: #fff !important;
+}
+
+input.ipt::placeholder{
+    color: rgba(255, 255, 255, 0.356) !important;
+}
+
+.button{
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+}
+.anchor:hover{
+    background: rgba(216, 216, 216, 0.274) !important;
+    text-decoration: none !important;
+}
+textarea{
+    outline: none !important;
+    resize: none !important;
+}
+
+.options > i:hover{
+    transition: .2s;
+    color: black !important;
+}
+
+.fs-7{
+    font-size: .80rem;
+}
+
+.input-group{
+    outline: none !important;
+}
